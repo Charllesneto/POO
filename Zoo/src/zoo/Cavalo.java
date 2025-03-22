@@ -14,9 +14,15 @@ public class Cavalo extends Animal {
         this.raca = raca;
     }
    
+   public void imprimirCavalo(Cavalo cavalo){
+       System.out.println("Tamanho Cavalo: "+cavalo.getTamanho());
+       System.out.println("Cor cavalo: "+cavalo.getCor());
+       System.out.println("Raça: "+ cavalo.getRaca());
+   }
    
-   
-    public void fugir(){
+    public void fugir(String local){
+        
+        System.out.println("Fugindo para: " + local);
        
     }
     

@@ -23,10 +23,7 @@ public class Animal {
         this.cor = cor;
     }
    
-   
-   
-    public void comer(){
-       
+    public void comer(String comida){
+        System.out.println("Comendo: "+ comida);  
     }
-    
 }
