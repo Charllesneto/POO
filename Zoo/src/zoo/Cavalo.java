@@ -3,9 +3,16 @@ package zoo;
 
 
 public class Cavalo extends Animal {
+   
+    public Cavalo(){}
+   
+   public Cavalo(float tamanho, String cor, String raca){
+       super(tamanho, cor);
+       this.raca = raca;
+   }
+    
     private String raca;
 
-   
     public String getRaca() {
         return raca;
     }

@@ -9,10 +9,13 @@ public class Zoo {
         
         Scanner scan = new Scanner(System.in).useLocale(Locale.US);
         Leao oLeao = new Leao();
+        Leao oLeao2 = new Leao(3,"Preto",true);
         Cavalo oCavalo = new Cavalo();
+        Cavalo oCavalo2 = new Cavalo(2,"Vermelho","Pangare");
         String localFuga; 
         String animalCacado;
-        String comida;
+        String comidaCavalo;
+        String comidaLeao;
         
         System.out.println("Digite o tamanho do cavalo:");
         oCavalo.setTamanho(scan.nextFloat());
@@ -24,8 +27,12 @@ public class Zoo {
         System.out.println("Digite a cor do Leão:");
         oLeao.setCor(scan.next());
         
-        System.out.println("Digite o que o animal comeu");
-        comida = scan.next();
+        System.out.println("Digite o que o cavalo comeu:");
+        comidaCavalo = scan.next();
+        
+        System.out.println("Digite o que o leao comeu:");
+        comidaLeao = scan.next();
+        
         
         System.out.println("Digite a raça do cavalo");
         oCavalo.setRaca(scan.next());
@@ -39,14 +46,20 @@ public class Zoo {
         System.out.println("Digite o animal que o leao caçou");
         animalCacado = scan.next();
         
-        oCavalo.comer(comida);
-        oLeao.comer(comida);
+        oCavalo.comer(comidaCavalo);
+        oLeao.comer(comidaLeao);
         
         oCavalo.imprimirCavalo(oCavalo);
         oCavalo.fugir(localFuga);
         
         oLeao.imprimirLeao(oLeao);
         oLeao.cacar(animalCacado);
+        
+        System.out.println("-------------------------------------");
+        
+        System.out.println("Cavalo 2: "+ oCavalo2.getTamanho()+"-"+oCavalo2.getCor()+"-"+ oCavalo2.getRaca());
+        System.out.println("Leao 2 : "+ oLeao2.getTamanho()+ "-" + oLeao2.getCor()+"-"+ oLeao2.getJuba());
+        
         
         scan.close();
         

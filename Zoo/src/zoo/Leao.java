@@ -2,6 +2,13 @@
 package zoo;
 
 public class Leao extends Animal {
+    
+    public Leao(){}
+    public Leao(float tamanho, String cor, Boolean Juba){
+       super(tamanho, cor);
+       this.juba = juba;
+   }
+    
     private boolean juba;
 
     public boolean getJuba() {
