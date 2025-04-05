@@ -4,7 +4,7 @@ package zoo;
 public class Leao extends Animal {
     
     public Leao(){}
-    public Leao(float tamanho, String cor, Boolean Juba){
+    public Leao(float tamanho, String cor, boolean juba){
        super(tamanho, cor);
        this.juba = juba;
    }
